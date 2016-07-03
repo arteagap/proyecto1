@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project.test.com.ciclovidaacivity.MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity2"
+        android:onClick="llamarAcivity2"/>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjuntar"
+        android:layout_below="@id/btn1"
+        android:layout_alignParentRight="true"
+        android:onClick="llamarAcivityResult"/>
+
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Adjunto el texto"
+        android:layout_toLeftOf="@id/btn2"
+        android:layout_below="@id/btn1"
+        android:layout_alignParentLeft="true"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btncaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Captura"
+        android:layout_below="@id/btn2"
+        android:onClick="tomarfoto"
+        />
+
+    <ImageView
+        android:id="@+id/imgCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btncaptura"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_launcher"/>
+
+
+</RelativeLayout>
